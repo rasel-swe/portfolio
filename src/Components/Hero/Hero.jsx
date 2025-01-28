@@ -22,7 +22,11 @@ const Hero = () => {
       </h2>
 
       <div className="hero-action">
-        <AnchorLink className="hero-button connect-btn" offset={50} href="#contact">
+        <AnchorLink
+          className="hero-button connect-btn"
+          offset={50}
+          href="#contact"
+        >
           Connect With Me
         </AnchorLink>
         <button className="hero-button resume-btn" onClick={handleResumeClick}>
