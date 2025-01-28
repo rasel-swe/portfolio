@@ -1,0 +1,151 @@
+/* Footer Container */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 50px 170px;
+  background: #1c1c28; /* Dark background */
+  color: #ffffff; /* Light text */
+  padding: 40px;
+  border-radius: 20px; /* Rounded edges */
+}
+
+/* Footer Top Section */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer Logo and Description */
+.footer-top-left p {
+  font-size: 18px;
+  max-width: 400px;
+  line-height: 1.6;
+  color: #a0a0a0; /* Muted text color */
+}
+
+/* Footer Right Section */
+.footer-top-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Email Input Box */
+.footer-email-input {
+  display: flex;
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  background: #32323c; /* Slightly lighter background */
+  align-items: center;
+  width: 350px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.footer-email-input:hover {
+  border: 2px solid #ffffff; /* Highlight on hover */
+}
+
+.footer-email-input input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+/* Subscribe Button */
+.footer-subscribe {
+  font-size: 18px;
+  padding: 15px 40px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 100%);
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.footer-subscribe:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  border-top: 1px solid #32323c; /* Divider */
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-bottom-left span {
+  color: #df8908; /* Accent color */
+  font-weight: bold;
+}
+
+.footer-bottom-right {
+  display: flex;
+  gap: 30px;
+  font-size: smaller;
+  color: #a0a0a0;
+}
+
+/* Footer Bottom Links */
+.footer-bottom-right p {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-bottom-right p:hover {
+  color: #df8908;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer {
+    margin: 50px 30px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+
+  .footer-email-input {
+    height: 10px;
+    width: 50%;
+    overflow: hidden;
+    
+  }
+
+  .footer-top-right{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  .footer-subscribe{
+    font-size: .9rem;
+    padding: 12px 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-bottom-right {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

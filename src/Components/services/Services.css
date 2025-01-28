@@ -1,0 +1,142 @@
+/* General Styling */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 20px;
+  background: #121212;
+  color: white;
+}
+
+.services-title {
+  text-align: center;
+  position: relative;
+}
+
+.services-title h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ff7e5f;
+  text-transform: uppercase;
+}
+
+.services-title img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  width: 250px;
+}
+
+/* Card Container */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Card Styling */
+.services-card {
+  background: #262626;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(255, 126, 95, 0.7);
+}
+
+/* Icon Animation */
+.services-icon {
+  font-size: 3rem;
+  color: #ff7e5f;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.services-card:hover .services-icon {
+  transform: rotate(20deg) scale(1.2);
+}
+
+/* Text Styling */
+.services-card h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.services-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff7e5f;
+  margin-bottom: 10px;
+}
+
+.services-card p {
+  font-size: 1rem;
+  text-align: center;
+  color: #d4d4d4;
+}
+
+/* Read More Interaction */
+.services-readmore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.services-readmore:hover {
+  color: #ff7e5f;
+}
+
+.services-readmore img {
+  width: 20px;
+  transition: transform 0.3s;
+}
+
+.services-readmore:hover img {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .services-title h1 {
+    font-size: 2rem;
+  }
+
+  .services-container {
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-card {
+    padding: 15px;
+  }
+
+  .services-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .services-card p {
+    font-size: 0.8rem;
+  }
+}
