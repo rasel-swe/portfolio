@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import profile_img from "../../assets/profile.png";
+import profile_img from "../../assets/Profile.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FiChevronDown } from "react-icons/fi";
 
