@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .mywork {
   padding: 80px 20px;
   display: flex;
@@ -13,8 +14,6 @@ body {
   align-items: center;
   gap: 50px;
   background: #121212;
-
-  color: #fff;
 }
 
 /* Header Section */
@@ -29,15 +28,6 @@ body {
   color: #00e6e6; /* Neon teal accent */
   text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6;
   margin-bottom: 10px;
-}
-
-.mywork-header img {
-  position: absolute;
-  width: 100px;
-  right: -20px;
-  top: 10px;
-  z-index: -1;
-  opacity: 0.5;
 }
 
 /* Grid Layout */
@@ -56,12 +46,12 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   background: #0f0f1f;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .mywork-card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
 
@@ -78,14 +68,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(233, 69, 96, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .mywork-card:hover .work-overlay {
@@ -95,11 +85,13 @@ body {
 .work-overlay h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #fff; /* Ensure text is readable */
 }
 
 .work-overlay p {
   font-size: 1rem;
   max-width: 80%;
+  color: #e5e5e5; /* Ensure text is readable */
 }
 
 .view-button {
@@ -166,11 +158,13 @@ body {
   .work-overlay p {
     font-size: 0.9rem;
   }
-.view-button{
-  font-size: .8rem;
-}
+
+  .view-button {
+    font-size: 0.8rem;
+  }
+
   .mywork-showmore {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding: 10px 20px;
   }
 }

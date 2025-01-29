@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer'
 import WorkExperience from './Components/WorkExperinece/WorkExperience'
 import SkillsExperiences from './Components/Skills& Experinces/Skills&Eperiences'
 import AchievementSummary from './Components/AcheivementSummary/AcheivementSummary'
+import Skills from './Components/Skills/Skills'
 
 const App = () => { 
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Hero />
       <About />
       <AchievementSummary />
+      <Skills />
       <SkillsExperiences />
       <WorkExperience />
       <Services />

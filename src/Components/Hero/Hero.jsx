@@ -6,7 +6,7 @@ import { FiChevronDown } from "react-icons/fi";
 
 const Hero = () => {
   const handleResumeClick = () => {
-    window.open("/path-to-your-resume.pdf", "_blank"); // Update with your resume link
+    window.open("https://www.dropbox.com/scl/fi/usgc4t30lh1dkas6rw10s/Kanij-Fatema-CV.pdf?rlkey=asg16ylsir0ozjuhfi2z1ls1e&st=jwydjuhd&dl=0", "_blank"); // Update with your resume link
   };
 
   return (

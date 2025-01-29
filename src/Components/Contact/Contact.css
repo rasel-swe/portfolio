@@ -123,6 +123,9 @@ body {
 
 @media (max-width: 768px) {
   .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr; /* Stacks on smaller screens */
     gap: 30px;
   }

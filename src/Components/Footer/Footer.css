@@ -121,6 +121,7 @@
   
 
   .footer-email-input {
+    padding: 22px 20px;
     height: 10px;
     width: 50%;
     overflow: hidden;

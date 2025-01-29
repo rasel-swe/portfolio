@@ -60,8 +60,9 @@ const AchievementSummary = () => {
 
   return (
     <div
+    id="portfolio"
       ref={sectionRef}
-      className="flex items-center justify-center"
+      className=" flex items-center justify-center"
       style={{ backgroundColor: "#121212", color: "#ffffff" }}
     >
       <div

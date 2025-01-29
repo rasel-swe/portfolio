@@ -8,18 +8,23 @@
 }
 
 .skills-experiences {
-  padding: 3rem 1rem;
+  padding: 8rem 1rem;
   background: var(--bg-color);
   color: var(--text-color);
   min-height: 100vh;
+
 }
 
 .section-heading {
-  font-size: 3rem;
+  font-size: 50px;
+  font-weight: 600;
+  background: linear-gradient(264deg, #ff9e2c, #ad38ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out;
   text-align: center;
-  margin-bottom: 2rem;
-  color: var(--primary-accent);
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .accordion {
@@ -64,7 +69,7 @@
 
 .accordion-header h3 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: ;
   color: var(--text-color);
 }
 
@@ -84,21 +89,20 @@
 }
 
 .accordion-item-details {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .accordion-item-details h4 {
   font-size: 1.2rem;
-  font-weight: bold;
   color: var(--hover-accent);
 }
 
 .accordion-item-details p {
-  margin: 0.3rem 0;
+  margin: 0.1rem 0;
 }
 
 .duration {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: var(--primary-accent);
 }
 

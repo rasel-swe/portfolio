@@ -8,11 +8,15 @@
 }
 
 .work-experience h2 {
-  font-size: 2.5rem;
-  color: #e94560;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  text-shadow: 0 4px 8px rgba(233, 69, 96, 0.5);
+  font-size: 50px;
+  font-weight: 600;
+  background: linear-gradient(264deg, #ff9e2c, #ad38ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
 }
 
 /* Slider */
@@ -53,10 +57,11 @@
 }
 
 .company-logo {
+
   max-width: 70px;
   margin-bottom: 15px;
   border-radius: 50%;
-  border: 2px solid #e94560;
+  border: 2px solid #a36a13;
   padding: 5px;
 }
 

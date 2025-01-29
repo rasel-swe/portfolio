@@ -1,5 +1,4 @@
 import React from 'react';
-// import themePattern from '../../assets/theme_pattern.svg';
 import myWorkData from '../../assets/mywork_data';
 import arrowIcon from '../../assets/arrow_icon.svg';
 import './MyWork.css';
@@ -14,7 +13,6 @@ const MyWork = () => {
     <div id="portfolio" className="mywork">
       <div className="mywork-header">
         <h1>My Latest Work</h1>
-        <img src="" alt="Background Pattern" />
       </div>
       <div className="mywork-grid">
         {myWorkData.map((work, index) => (

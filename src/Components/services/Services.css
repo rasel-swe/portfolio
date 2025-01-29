@@ -34,7 +34,7 @@
 /* Card Container */
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1FR 1FR 1FR;
   gap: 40px;
   width: 100%;
   padding: 0 20px;

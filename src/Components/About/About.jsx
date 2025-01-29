@@ -1,9 +1,10 @@
+// AboutMe.js
 import React, { useEffect } from "react";
+import profileImg from "../../assets/about_profile.jpg";
+import { motion } from "framer-motion";
 import "./About.css";
-import theme_pattern from "../../assets/theme_pattern.svg";
-import profile_img from "../../assets/about_profile.jpg";
 
-const About = () => {
+const AboutMe = () => {
   useEffect(() => {
     const progressBars = document.querySelectorAll(".progress-bar");
 
@@ -31,84 +32,56 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className="about">
+    <motion.div
+      id="about"
+      className="about"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <div className="about-header">
         <h1>About Me</h1>
-        <img src={theme_pattern} alt="Decorative Pattern" />
       </div>
+
       <div className="about-container">
-        <div className="about-left">
-          <img className="profile-img" src={profile_img} alt="Profile" />
-        </div>
+        <motion.div
+          className="about-left"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5 }}
+        >
+          <img className="profile-img" src={profileImg} alt="Profile" />
+        </motion.div>
+
         <div className="about-right">
-          <div className="about-description">
-            <p>
-              I am a passionate software engineer who loves building innovative
-              solutions and learning cutting-edge technologies.
+          <motion.div
+            className="about-description"
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <p className="introduction-text">
+              <span className="highlight">Hello, I’m Kanij Fatema,</span>
+              <span className="color-gradient">
+                an <strong>Assistant Exam Officer</strong> at Daffodil International University
+              </span>. I’m passionate about <strong>streamlining academic processes</strong> and
+              using <strong>technology</strong> to enhance efficiency. My strengths lie in balancing
+              <em>technical expertise</em> with <em>dynamic management skills</em>.
             </p>
-            <p>
-              Skilled in front-end and back-end development, with a knack for
-              creating engaging user experiences.
-            </p>
-          </div>
-          <div className="about-skills">
-            <h2>Skills</h2>
-            <div className="skills-grid">
-              <SkillCategory
-                title="Technical Skills"
-                skills={[
-                  { name: "JavaScript", level: "90%" },
-                  { name: "React", level: "85%" },
-                  { name: "Node.js", level: "80%" },
-                  { name: "Python", level: "75%" },
-                  { name: "SQL", level: "70%" },
-                ]}
-              />
-              <SkillCategory
-                title="Soft Skills"
-                skills={[
-                  { name: "Communication", level: "95%" },
-                  { name: "Teamwork", level: "90%" },
-                  { name: "Problem-Solving", level: "85%" },
-                  { name: "Time Management", level: "80%" },
-                  { name: "Leadership", level: "75%" },
-                ]}
-              />
-              <SkillCategory
-                title="Other Skills"
-                skills={[
-                  { name: "Event Management", level: "100%" },
-                  { name: "Microsoft Office", level: "85%" },
-                  { name: "ERP", level: "70%" },
-                  { name: "Data Management", level: "90%" },
-                  { name: "Stress Management", level: "95%" },
-                ]}
-              />
+            <div className="personal-info">
+              <p className="info-intro">Quick Overview:</p>
+              <ul>
+                <li><strong>Name:</strong> Kanij Fatema</li>
+                <li><strong>Employee ID:</strong> 710002981</li>
+                <li><strong>Designation:</strong> Assistant Exam Officer</li>
+                <li><strong>Department:</strong> Office of The Controller of Examination</li>
+                <li><strong>Blood Group:</strong> O+</li>
+              </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </div>
-  );
-};
-const SkillCategory = ({ title, skills }) => {
-  return (
-    <div className="skills-category">
-      <h3>{title}</h3>
-      {skills.map((skill, index) => (
-        <div className="skill" key={index}>
-          <span>{skill.name}</span>
-          <div className="progress-container">
-            <div
-              className="progress-bar"
-              data-width={skill.level}
-              style={{ transitionDelay: `${index * 0.2}s` }}
-            ></div>
-          </div>
-        </div>
-      ))}
-    </div>
+    </motion.div>
   );
 };
 
-export default About;
+export default AboutMe;
