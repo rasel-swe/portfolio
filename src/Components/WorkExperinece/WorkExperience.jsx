@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./WorkExperience.css";
 import job_diu from "../../assets/job-diu.jpeg";
 import job_labane from "../../assets/job-labane.png";
-import jo_R_B from "../../assets/job-R&B.png";
+import jo_R_B from "../../assets/job-r&b.png";
 import job_hotel_icon from "../../assets/job-hotel.png";
 import jon_cab from "../../assets/job-cab.jpg";
 import diu from "../../assets/diu.jpg";
